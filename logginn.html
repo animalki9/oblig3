@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <title>logginn</title>
+    </head>
+    <body>
+        <main>
+            <header class="header-container">
+                <div class="logo">
+                    <a href="index.html" id="logo">Logo</a>
+                </div>
+                <div class="header-icons-container">
+                    <a href="logginn.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>    
+                <div class="header-icons">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="single-line" name="single-line-input" placeholder="hva leter du etter?">
+
+                </div>
+            </header>
+                <section>
+                    <article class="logg-inn-body">
+                        <h3>Logginn</h3>
+                        <form method="post" action="#" autocomplete="on">
+                            <label for="email">E-postadresse *</label>
+                            <input type="email" name="email" placeholder="nora@epost.no.." id="email">
+                            <label for="password">passord *</label>
+                            <input type="password" name="password" placeholder="*********" id="password">
+                            <label for="remember">Husk meg</label>
+                            <input type="checkbox" id="remember" name="remember">
+                            <p><a href="forgot_password.html">Glemmt passordet?</a></p>
+                            <input type="submit" value="Logg Inn" style="background-color: black; color: white;">
+                            
+                        </form>
+                        <p>Ikke medlem? Registrer deg nå og få de fantastiske medlemstillbudene<button class="button" style="background-color: black; color: white;">Registrer nå</button></p>
+
+                    </article>
+                </section>
+        </main>
+        <footer>
+            <p>*= Obligatoriske felt</p>
+        </footer>
+    </body>
+</html>

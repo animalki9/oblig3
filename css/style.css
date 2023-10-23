@@ -1,0 +1,135 @@
+header{
+    background-color: #fff;
+}
+.logo{
+    position: absolute;
+    left: 0; /* Position the icon to the right within the container */
+    top: 1%;  
+}
+.header-container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically within the header */
+    justify-content: center; /* Center items horizontally within the header */
+    padding-top: 40px;
+}
+.header-icons-container {
+    position: absolute;
+    right: 0; /* Position the icon to the right within the container */
+    top: 1%; /* Vertically center the icon in the container */
+    width: 110px;
+    font-size: 2em;
+    padding-right: 0%;
+}
+.header-icons {
+    position: absolute;
+    left: 0%; /* Position the icon to the right within the container */
+    padding-top: 20px;
+    font-size: 2em;
+}
+.nav-bar {
+    list-style: none; /* Remove bullets or other list styles */
+    display: flex;
+    padding-top: 40px;
+}
+main {
+    width: 80%;
+}
+.grid-container {
+    align-items: center; 
+    padding: 40px;
+    padding-top: 60px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px;
+}
+.grid-item {
+    flex-direction: row;
+    grid-row: auto; /* Reset grid row to default behavior */
+    grid-column: auto; /* Reset grid column to default behavior */
+    height: 125px;
+    border: 1px solid #000;
+    align-items: center; /* Center items vertically within the header */
+    justify-content: center; /* Center items horizontally within the header */
+    display: flex;
+    text-align: center;
+}
+.grid-container-two {
+    align-items: center; 
+    padding: 1%;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
+.grid-item-two{
+    align-items:center;
+    border: 1px solid black;
+    width: 300px;
+    justify-content: center;
+    text-align: justify;
+
+}
+footer {
+    background-color: black; /* Change the background color to a specific color */
+    color: #fff; /* Change the text color to white, for better contrast */
+    padding-top: 10px; /* Add padding for spacing and better appearance */
+    position: fixed; /* You can use 'absolute' instead if fixed doesn't suit your needs */
+    bottom: 0;
+    width: 100%; /* To stretch the footer across the screen */
+    margin-left: -8px;
+}
+
+.footer-container {
+width: 100px;
+}
+.footer-icons{
+    display: flex; /* Use flexbox to arrange items vertically */
+    flex-direction: column; /* Arrange items in a column layout */
+    align-items: center;;
+    width: 100%;
+    bottom: 1%;
+    position: absolute;
+
+}
+.logg-inn-body{
+    padding: 60px;
+    align-items: center;
+}
+@media screen and (min-width: 600px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        padding: 80px;
+    }
+    
+    .grid-item {
+        align-items: center; /* Center items vertically within the header */
+        justify-content: center; /* Center items horizontally within the header */
+        display: flex;
+        height: 200px;
+    
+    }
+    .footer-icons{
+        display: none;
+    }
+
+    .footer-conent{
+        display: flex; /* Use flexbox to arrange elements horizontally */
+        justify-content: center
+    }
+    .logo{
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .grid-container-two {
+        align-items: center; 
+        padding: 1%;
+        display: grid;
+    }
+}
+/* Add more CSS styles as needed */
